@@ -4,7 +4,7 @@
 ### Заголовок
 1. [Тут має бути текс](https://github.com/BobasB/2022_kn320_oop)
 
-### тут ми вставили код
+### тут ми вставили код :heavy_exclamation_mark: :heavy_exclamation_mark:
 
 ```python
 print("Щось сказав")
@@ -12,7 +12,7 @@ if a<1:
     a =2
 ```
 
-### тут ми вставили screenshots
+### тут ми вставили screenshots :scream:
 
 ![any text](https://github.com/BobasB/2022_kn320_oop/raw/main/screenshots/pr1.png)
 
