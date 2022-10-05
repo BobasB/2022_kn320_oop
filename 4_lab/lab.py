@@ -1,7 +1,5 @@
-import numpy as np
+import os
+#os.environ["MY_VAR"] = "Я модифікував змінну"
+print(os.environ.get("MY_VAR"))
 
-a = np.arange(6)
-a2 = a[np.newaxis, :]
-a2.shape
-print(a2)
-
+print(os.environ["VAR_2_TEMP"])
