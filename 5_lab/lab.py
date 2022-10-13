@@ -15,9 +15,14 @@ class Rocket:
         return f"Ракета {self.name} має масу {self.mass} кг."
 
     def convert_to_pounds(self): #конвертуємо кг в фунти
-        return self.mass * 2.20462262
+        if self.mass > 0:
+            return self.mass * 2.20462262
+        return None  
 
 
 #a = Rocket("Falcon 9", 549054.0)
 #print(a.get_mass)
+#a.mass = -10
+#print(a.convert_to_pounds())
 #print(f"Маса ракети в фунтах {a.convert_to_pounds()}")
+
