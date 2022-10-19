@@ -18,11 +18,15 @@ class Rocket:
         if self.mass > 0:
             return self.mass * 2.20462262
         return None  
+    
+    def new_fun(self):
+        return f"Not tested"
 
-
-#a = Rocket("Falcon 9", 549054.0)
-#print(a.get_mass)
-#a.mass = -10
-#print(a.convert_to_pounds())
-#print(f"Маса ракети в фунтах {a.convert_to_pounds()}")
+def test_pass():
+    a = Rocket("Falcon 9", 549054.0)
+    assert "Falcon 9" in a.get_mass, "Назва ракети не коректно виводиться"
+    #print()
+    #a.mass = -10
+    #print(a.convert_to_pounds())
+    #print(f"Маса ракети в фунтах {a.convert_to_pounds()}")
 

@@ -10,6 +10,9 @@ class TestMyApp(unittest.TestCase):
     def setUp(self) -> None:
         self.obj = Rocket(self.name, self.mass)
 
+    def tearDown(self) -> None:
+        del self.obj #видаляти його не має змісту, просто для прикладу
+
     def test_if_object_created(self):
         self.assertEqual(self.obj.name, self.name)
         self.assertEqual(self.obj.mass, self.mass)
