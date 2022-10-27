@@ -70,8 +70,8 @@ jobs:
         pytest tests.py -v
   
   lab_6:
-      name: Lab 6
-      runs-on: ubuntu-latest
-      needs: [lab_5]
-      steps:
-      - uses: actions/checkout@v3
+    name: Lab 6
+    runs-on: ubuntu-latest
+    needs: [lab_5]
+    steps:
+    - uses: actions/checkout@v3
