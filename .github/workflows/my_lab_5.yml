@@ -45,7 +45,6 @@ jobs:
     name: Lab 5
     runs-on: ubuntu-latest
     if: ${{ github.event_name == 'workflow_dispatch' }}
-    needs: [lab_3, lab_4]
     steps:
     - uses: actions/checkout@v3
     - name: Set up Python 3.10
@@ -68,6 +67,7 @@ jobs:
       run: |
         cd 5_lab
         pytest tests.py -v
+        pytest lab.py -v
     - name: Generate Report
       run: |
         cd 5_lab/
@@ -82,6 +82,6 @@ jobs:
   lab_6:
     name: Lab 6
     runs-on: ubuntu-latest
-    needs: [lab_5]
+    needs: [lab_3, lab_4]
     steps:
     - uses: actions/checkout@v3
